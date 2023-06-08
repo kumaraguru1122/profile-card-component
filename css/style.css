@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-gray:hsl(0, 0%, 59%);
+  --fs-large:1.125em;
+  --fw-regular:400;
+  --fw-bold:700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+body {
+  background-color: var(--Dark-cyan);
+  background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right 50vw bottom 35vh, left 50vw top 52vh;
+  font-family: "Kumbh Sans", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  color: var(--Dark-gray);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sr-only {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1em;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto auto;
+  min-width: 21.5em;
+}
+.card__info {
+  background-image: url(/images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-position: top 0% right 0%;
+  padding: 5em 2em 1.5em;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75em;
+  border-bottom: 1px solid var(--Dark-gray);
+}
+.card__info .card-img {
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-bottom: 0.5em;
+}
+.card__info .name {
+  font-size: var(--fs-large);
+}
+.card__info .name span {
+  font-weight: var(--fw-bold);
+  color: var(--Very-dark-desaturated-blue);
+  margin-right: 10px;
+}
+.card__stats {
+  padding: 1.5em 3em;
+  justify-content: space-between;
+}
+.card__stats li {
+  flex-direction: column;
+  gap: 0.3em;
+}
+.card__stats li strong {
+  font-size: var(--fs-large);
+  font-weight: var(--fw-bold);
+  color: var(--Very-dark-desaturated-blue);
+}
+.card__stats li .label {
+  font-size: 0.725em;
+  letter-spacing: 0.125em;
+}/*# sourceMappingURL=style.css.map */
